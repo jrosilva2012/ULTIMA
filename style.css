@@ -20,44 +20,96 @@ h1{
     text-align: center;
     display: flex;
 
+
 }
+
+.home{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.login{
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 .corpo{
 
 
-    margin-top: 50px;
-    margin: auto ;
-    align-items: center;
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-image: url("https://wallpapercave.com/wp/wp6010448.jpg");
-    height: 100vh;
-    border-radius: 20px;
-    border: #3393e2;
-    width: 80%;
-    display: flex;
-
+        margin-top: 50px;
+        margin: auto ;
+        align-items: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-image: url("https://wallpapercave.com/wp/wp6010448.jpg");
+        height: 100vh;
+        border-radius: 20px;
+        border: #3393e2;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        @media (max-width: 800px) {
+        .flex-item-right, .flex-item-left {
+        flex: 100%;
+    }
+    }
 }
 
-.l1{
 
-    color: darkorange;
+
+/* .l1{
+
+    color: transparent; 
     font-size: 50px;
     text-align: center;
-    background-color: transparent;
+    background-color: transparent; 
     cursor: pointer;
     transition: transform 0.5s ease;
+
+   
     
+
+
 }
 
 .l1:hover{
-    color: aliceblue;
+    color: rgb(240, 241, 255);
     font-size: 100px;
     text-align: center;
     background-color: transparent;
     cursor: pointer;
     transform: scale(1.2);
-      
+    -webkit-text-stroke: 5px black;
     
+} */
+
+.titulo{
+    text-align: center;
+    display: flex;
 }
 
+
+
+.titulo h1{
+
+    color: transparent; 
+    font-size: 50px;
+    text-align: center;
+    background-color: transparent; 
+    cursor: pointer;
+    transition: transform 0.5s ease;
+
+}
+
+.titulo h1:hover{
+
+    color: rgb(240, 241, 255);
+    font-size: 100px;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    transform: scale(1.2);
+    -webkit-text-stroke: 5px black;
+}

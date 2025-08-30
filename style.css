@@ -1,3 +1,6 @@
+:root{
+    --cor-azul: #1933c4 ;
+}
 body{
    background-color: rgb(19, 99, 204); 
    background: linear-gradient(45deg, #ff0022, #ff761b);
@@ -17,8 +20,8 @@ h1{
     
     margin-top: 50PX;
     margin-bottom: 50px;
-    background-color: rgba(250, 75, 75, 0.63);
-    background: linear-gradient(135deg, #ff761b, #ff0022);
+    background-color: var( --cor-azul);
+    background: linear-gradient(135deg,#ff761b, #ff0022);
     text-align: center;
     display: flex;
 
@@ -87,11 +90,20 @@ h1{
 .titulo{
     text-align: center;
     display: flex;
+    & h1{
+        color: transparent; 
+    font-size: 100px;
+    text-align: center;
+    background-color: transparent; 
+    cursor: pointer;
+    transition: transform 0.5s ease;
+
+    }
 }
 
 
 
-.titulo h1{
+/* .titulo h1{
 
     color: transparent; 
     font-size: 100px;
@@ -100,7 +112,7 @@ h1{
     cursor: pointer;
     transition: transform 0.5s ease;
 
-}
+} */
 
 
 
@@ -111,7 +123,7 @@ h1{
 }
 
 .titulo h1:nth-child(even):hover{
-    transform: scale(2.0) translate(30px);
+    transform: scale(5.0) translate(50px);
     color: #030303;
     -webkit-text-stroke: 5px #e5ff00;
 }
